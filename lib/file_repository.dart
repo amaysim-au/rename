@@ -8,10 +8,10 @@ class FileRepository {
   late Logger logger;
   String androidManifestPath =
       '.\\android\\app\\src\\main\\AndroidManifest.xml';
-  String iosInfoPlistPath = '.\\ios\\Runner\\Info.plist';
+  String iosInfoPlistPath = '.\\ios\\amaysim\\Info.plist';
   String androidAppBuildGradlePath = '.\\android\\app\\build.gradle';
-  String iosProjectPbxprojPath = '.\\ios\\Runner.xcodeproj\\project.pbxproj';
-  String macosAppInfoxprojPath = '.\\macos\\Runner\\Configs\\AppInfo.xcconfig';
+  String iosProjectPbxprojPath = '.\\ios\\amaysim.xcodeproj\\project.pbxproj';
+  String macosAppInfoxprojPath = '.\\macos\\amaysim\\Configs\\AppInfo.xcconfig';
   String launcherIconPath = '.\\assets\\images\\launcherIcon.png';
   String linuxCMakeListsPath = '.\\linux\\CMakeLists.txt';
   String linuxAppCppPath = '.\\linux\\my_application.cc';
@@ -20,10 +20,10 @@ class FileRepository {
     logger = Logger(filter: ProductionFilter());
     if (Platform.isMacOS || Platform.isLinux) {
       androidManifestPath = 'android/app/src/main/AndroidManifest.xml';
-      iosInfoPlistPath = 'ios/Runner/Info.plist';
+      iosInfoPlistPath = 'ios/amaysim/Info.plist';
       androidAppBuildGradlePath = 'android/app/build.gradle';
-      iosProjectPbxprojPath = 'ios/Runner.xcodeproj/project.pbxproj';
-      macosAppInfoxprojPath = 'macos/Runner/Configs/AppInfo.xcconfig';
+      iosProjectPbxprojPath = 'ios/amaysim.xcodeproj/project.pbxproj';
+      macosAppInfoxprojPath = 'macos/amaysim/Configs/AppInfo.xcconfig';
       launcherIconPath = 'assets/images/launcherIcon.png';
       linuxCMakeListsPath = 'linux/CMakeLists.txt';
       linuxAppCppPath = 'linux/my_application.cc';
